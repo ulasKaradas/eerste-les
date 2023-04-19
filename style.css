@@ -1,0 +1,97 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: red;
+    margin-bottom: 100px;
+  }
+  
+  header {
+    background-color: #13373F;
+  }
+  
+  button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+  }
+  
+  #logo {
+    margin: auto;
+    display: block;
+    width: 620px;
+    height: 143px;
+    background-image: url(../Img/HAST__KOH_naast_-_quadri_-_563x249_fb.webp);
+    background-size: 620px 143px;
+  }
+  
+  p {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  button {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 12px;
+    word-wrap: break-word;
+  }
+  
+  #div_color {
+    height: 40%;
+  }
+  
+  .wrapper2R {
+    display: grid;
+    grid-template-columns: 70fr 30fr;
+    grid-gap: 5fr;
+  }
+  
+  .wrapper2L {
+    display: grid;
+    grid-template-columns: 30fr 70fr;
+    grid-gap: 5fr;
+  }
+  
+  .box {
+    margin: 10%;
+    background-color: #444;
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 160%;
+    font-weight: bolder;
+  }
+  
+  #mySpaceManSpace {
+    width: 270px;
+    overflow: auto;
+    text-align: center;
+  }
+  
+  #mySpaceManSpace:hover {
+    width: 100%;
+    height: 50%;
+  }
+  
+  #movingOnScrollspaceman {
+    width: 300px;
+    margin-top: 10%;
+    margin-left: -200px
+  }
+  
+  #movingspaceman {
+    width: 115px;
+    margin-top: 10%;
+  }
+  
+  #spaceshutlehover{
+    width: 100px;
+    height: 100px;
+    transition: all 0.5s ease;
+  }
+
+  #spaceshutlehover :hover{
+    transform: scale(1.5);
+  }
+  
