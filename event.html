@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo"></div>
+      </header>
+      <div class="wrapper2R">
+        <div class="box" id="div_color">
+    
+        </div>
+        <div class="box">
+            <button onclick="changeColorgreen()">Verander de kleur in groen</button>
+            
+            <script>
+            function changeColorgreen() {
+              var div = document.getElementById("div_color");
+              div.style.backgroundColor = "green";
+            }
+            </script>
+         
+          <button onclick="changeColoryellow()">
+            Verander de kleur in geel.
+          </button>
+          <script>
+            function changeColoryellow() {
+              var div = document.getElementById("div_color");
+              div.style.backgroundColor = "yellow";
+            }
+            </script>
+
+          <br>
+    
+          
+    
+          <button onclick="changeBackgroundColor('yellow')">
+            Verander de achtergrondkleur.
+          </button>
+          <script>
+            function changeBackgroundColor(color) {
+              document.body.style.backgroundColor =color;
+            }
+            </script>
+    
+          
+    
+        </div>
+      </div>
+      <div class="wrapper2L">
+    
+        <div class="box">
+          <!--
+            Plaats hier de afbeelding (spaceship.png) met een onmouseover die een
+            functie oproept om de afmeting van deze img (this) te vergroten. Met deze
+            onmouseover functie veranderd ook de tekst van div met id raket_text in:
+            Het onmouseover event roept de functie bigImg op met argument this.
+    
+            Het onmouseout event roept functie op die de img terug op de initiÃ«le grote terug zet.
+            Verder zet deze functie de tekst van div met id raket_text terug op de initiÃ«le waarde:
+            Ga met je muis over de raket.
+          -->
+    
+          <img onmouseover="vergrootDeRaket()" src="./Img/pngtree-space-shuttle-png-image_2437816.jpg" id="spaceshutlehover" alt="Hover Image">
+          <script>
+            function vergrootDeRaket() {
+              const raket = document.getElementById = spaceshutlehover
+            }
+            </script>
+        </div>
+        <div class="box" id="raket_text">Ga met je muis over de raket.</div>
+      </div>
+    
+      <div class="wrapper2R">
+    
+        <div class="box">
+          <img id="SpaceMan" src="./Img/3d-astronaut-flies-in-open-space-rigged-character-you-can-make-any-pose-cartoon-spaceman-png.png" alt="SpaceMan" width="115" border="0" style="position: relative; left: 0;">
+        </div>
+        <div class="box" id="spaceman_text">
+          <button onclick="moveLeft()">
+            Verschuif de space man naar links.
+          </button>
+          <script>
+           console.log('werkt')
+           function moveLeft() {
+            var SpaceMan = document.getElementById("SpaceMan");
+            SpaceMan.style.left =  - 100 + "px";
+           }</script>
+          <br>
+          <button ...">
+            Verschuif de space man naar het midden.
+          </button>
+          <br>
+          <button ...">
+            Verschuif de space man naar rechts.
+          </button>
+        </div>
+      </div>
+      <!--
+        Hieronder staan de knoppen die dienen om img met spaceman.png te
+        verplaatsen binnen een tijdsverloop. Dit doe je door functies te schrijven
+        die de eigenschap style.transitionDelay en style.transition aan te passen.
+        Let wel functie moveSpaceman heeft een argument mee die het aantal seconden
+        vertegenwoordigd om de style.transition te bepalen. Het horizontaal verplaatsen
+        die je door eigenschap .style.marginLeft aan te passen.
+      -->
+    
+      <button ...>Zet de transition op 1 seconden</button>
+      <button ...>Zet de transition op 2 seconden</button>
+      <button ...>Zet de transition op 3 seconden</button>
+    
+      <div id="space" style="padding-bottom:200px">
+        <div id="mySpaceManSpace">
+          <img id="movingspaceman" src="./Img/3d-astronaut-flies-in-open-space-rigged-character-you-can-make-any-pose-cartoon-spaceman-png.png" alt="Spaceman" border="0">
+        </div>
+        <img src="./Img/pngtree-space-shuttle-png-image_2437816.jpg" alt="SpaceShip" style="margin-top:-25%" width="115" border="0">
+    
+      </div>
+    
+      <!--
+        Schrijf een script dat img spaceman.png van width 0px in een tijdsverloop
+        van 3 seconden veranderd naar width 145px. Laat dit script ook de afmetingen
+        van het gebruikerswindow ophalen om van deze img eigenschap style.marginLeft
+        te zetten op 70% van de window.innerWidth. De initiÃ«le style.marginLeft staat
+        op
+      -->
+    
+      <img ...>
+      <div class="box" id="div_check_visibility">Scroll deze div in en uit beeld.</div>
+    
+      <div style="height: 686px;display: flex; align-items: center;justify-content: center;flex-direction:column">
+        <img ...>
+      </div>
+      <hr style="width:100%;">
+    
+      <button ...;">
+        Lanceer de raket.
+      </button>
+</body>
+</html>
